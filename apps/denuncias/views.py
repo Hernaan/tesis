@@ -4,7 +4,6 @@ from apps.denuncias.models import Denuncia, Servicio, TipoServicio
 from django.views.generic import CreateView, ListView
 from django.core.urlresolvers import reverse_lazy
 from apps.denuncias.forms import DenunciaForm
-from apps.denuncias.paginacion import Paginate
 from datetime import datetime
 from django.http import JsonResponse
 from django.contrib.auth.decorators import permission_required
