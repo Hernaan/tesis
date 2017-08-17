@@ -4,7 +4,7 @@
 {% endblock portada %}
 {% block content %} <br>
 <div class="container">
-<h2>Denuncias <small id="new_pubs"></small></h2>
+<h2>Denuncias<small id="new_pubs"></small></h2>
 <table class="table table-sm">
   <thead>
     <tr>
@@ -58,7 +58,7 @@
     var $notify = $('#new_pubs');
 
     setInterval( function () {
-      $.get('/denuncias/check_pubs/', {'date': date}, function (data) {
+      $.get('/bomberosk68.herokuapp.com/denuncias/check_pubs/', {'date': date}, function (data) {
 
         if (data.num_pubs === 0)
           $notify.text('No hay nuevas denuncias');
