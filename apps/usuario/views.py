@@ -10,7 +10,7 @@ class RegistroUsuario(CreateView):
 	model = User
 	template_name = "usuario/registrar.html"
 	form_class = RegistroForm
-	success_url = reverse_lazy('denuncia:pgprincipal')
+	success_url = reverse_lazy('denuncias:pgprincipal')
 
 
 # Create your views here.
